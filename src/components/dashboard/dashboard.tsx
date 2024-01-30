@@ -33,9 +33,9 @@ interface InputValuesProp {
 }
 
 const Investment = [
-  { "id": 1, "type": "Stocks", "status": "active", "date": "2024-01-27", "name": "Stock Investment 1", "value": 5000 },
-  { "id": 2, "type": "Crypto", "status": "active", "date": "2024-01-28", "name": "Crypto Investment 1", "value": 3000 },
-  { "id": 3, "type": "Real Estate", "status": "closed", "date": "2024-01-29", "name": "Property Investment 1", "value": 10000 }
+  { "id": 1, "type": "Stocks", "status": "active", "date": "2024-01-27", "name": "Stock", "value": 5000 },
+  { "id": 2, "type": "Crypto", "status": "active", "date": "2024-01-28", "name": "Crypto", "value": 3000 },
+  { "id": 3, "type": "Real Estate", "status": "closed", "date": "2024-01-29", "name": "Property", "value": 10000 }
 ];
 
 

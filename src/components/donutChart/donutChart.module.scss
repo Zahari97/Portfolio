@@ -4,11 +4,20 @@
   display: flex;
   align-items:center;
   justify-content: center;
+
+  .donutchart {
+    display: none!important;
+  }
+}
+.donutchartContainer {
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
 }
 
-.donutchart-legend {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 50%;
+.donutchart {
+  order: 1; /* DonutChart comes after legend in visual order */
+}
+
+.donut-legend-item {
+  display: none!important;
 }

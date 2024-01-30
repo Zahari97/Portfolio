@@ -9,12 +9,12 @@ interface DonutProps {
 }
 
 function DonutChartComponent({data}: DonutProps):JSX.Element {
-  const [chartDimensions, setChartDimensions] = useState({ width: 300, height: 300 });
+  const [chartDimensions, setChartDimensions] = useState({ width: 210, height: 140 });
   const [showLegend, setShowLegend] = useState(true) 
   useEffect(() => {
     const handleResize = () => {
-      const newWidth = window.innerWidth < 600 ? 250 : 350;
-      const newHeight = newWidth;
+      const newWidth = window.innerWidth < 600 ? 150 : 450;
+      const newHeight = window.innerWidth < 600 ? 150 : 300;
       setChartDimensions({ width: newWidth, height: newHeight });
       const legend = window.innerWidth < 600 ? false : true;
       setShowLegend(legend)
@@ -27,9 +27,9 @@ function DonutChartComponent({data}: DonutProps):JSX.Element {
   }, []);
   return (
 
-    <div className={styles.donutchart}>
+    <div className={styles.donutChartContainer}>
       <DonutChart
-        className={styles.DDDDD}
+        // className={styles.donutchart}
         height={chartDimensions.height}
         width={chartDimensions.width}
         data={data}
