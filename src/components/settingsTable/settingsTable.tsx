@@ -123,7 +123,7 @@ function SettingsTable({jsonData}: Props): JSX.Element {
             onClose={():void=> {setOpenModal(!openModal); setUser(null)}}
             title={user ? user.fname : 'Create user'}
           >
-            <form onSubmit={(formik.handleSubmit)}>
+            <form onSubmit={(formik.handleSubmit)} className={styles.form}>
               <InputComponent 
                 name='fname'
                 label="fname"

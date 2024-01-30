@@ -109,7 +109,7 @@ function Dashboard(): JSX.Element {
             onClose={():void=> {setOpenModal(!openModal)}}
             title="Create Investment Card"
           >
-            <form onSubmit={(formik.handleSubmit)}>
+            <form onSubmit={(formik.handleSubmit)} className={styles.form}>
               <InputComponent 
                 name="name"
                 value={formik.values.name} 
