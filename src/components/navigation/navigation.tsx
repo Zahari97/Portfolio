@@ -25,8 +25,8 @@ const Navigation = () => {
           <Toggle handleChange={()=>setIsDark(!isDark) } isChecked={isDark} />
           </div>
 
-          <div>
-            <div id="hamburgerButton" onClick={()=> setOpenedNav(!openedNav)}
+          <div className={styles.WrapperHamburger} onClick={()=> setOpenedNav(!openedNav)}>
+            <div id="hamburgerButton" 
               className={`${styles.Hamburger} ${openedNav ? `${styles.isActive}` : ''}`}>
               <div>
               

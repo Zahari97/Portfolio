@@ -69,7 +69,12 @@
   }
 }
 
-
+.WrapperHamburger {
+  position: relative;
+  z-index: 999;
+  cursor: pointer;
+  padding: 10px 2px;
+}
 
 .isActive .wrapperNav {
   right: 0!important;
