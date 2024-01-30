@@ -1,0 +1,18 @@
+
+.wrapperSelect {
+  position: relative;
+}
+
+.wrapperSelect label {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  color: #091e71;
+  transform: translateY(-50%);
+  font-size: 12px;
+  background-color: #fff;
+  line-height: 16px;
+  padding: 0 5px;
+  font-weight: 500;
+  z-index: 9999;
+}

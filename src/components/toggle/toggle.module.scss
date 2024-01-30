@@ -1,0 +1,43 @@
+.toggleContainer {
+  display: flex;
+}
+
+.toggle {
+  display: none;
+}
+
+
+.toggle + label {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.toggle + label::before {
+  content: "";
+  height: 20px;
+  width: 35px;
+  border-radius: 1em;
+  background-color: var(--background-color);
+  margin-right: 2px;
+  transition: background-color 250ms ease-in-out;
+  border: 1px solid var(--foreground-color);
+}
+
+.toggle + label::after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 1em;
+  background-color: var(--foreground-color);
+  position: absolute;
+  left: 2px;
+  margin-right: 2px;
+  transition: background-color 250ms ease-in-out;
+}
+
+.toggle:checked + label::after {
+  transform: translateX(100%);
+}

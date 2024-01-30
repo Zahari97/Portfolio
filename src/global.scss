@@ -1,0 +1,39 @@
+
+.Shell {
+  height: 100%;
+  padding: 0 16px;
+  @media(min-width: 768px){
+    padding: 0 50px;
+  }
+  @media(min-width: 1280px){
+    margin: 0 auto;
+    max-width: 1180px;
+  }
+}
+
+.App {
+  background-color: var(--background-color);
+  transition: background-color 250ms ease-in-out;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+:root {
+  --background-color: #fff;
+  --foreground-color: #05135f;
+  --primary-text-color: #05135f;
+  --secondary-text-color: #fff;
+  --toggle-bg-color: yellow;
+  --toggle-fg-color:#26550b;
+}
+
+
+[data-theme="dark"] {
+  --background-color: #05135f;
+  --foreground-color: #fff;
+  --primary-text-color: #fff;
+  --secondary-text-color: #05135f;
+  --toggle-bg-color: red;
+  --toggle-fg-color:#475a00;
+
+}
