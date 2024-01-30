@@ -141,7 +141,7 @@ function Dashboard(): JSX.Element {
             </form>
           </ModalComponent>
         </div>
-        <div className={styles.tablePanel}>
+        <div className={`${styles.tablePanel} ${styles.DonutWrapper}`}>
           <h2>Donut Visualization</h2>
           <DonutChartComponent data={transformDataForDonutChart(investments)}/>
         </div>

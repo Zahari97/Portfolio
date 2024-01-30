@@ -13,7 +13,7 @@ function DonutChartComponent({data}: DonutProps):JSX.Element {
   const [showLegend, setShowLegend] = useState(true) 
   useEffect(() => {
     const handleResize = () => {
-      const newWidth = window.innerWidth < 600 ? 250 : 300;
+      const newWidth = window.innerWidth < 600 ? 250 : 350;
       const newHeight = newWidth;
       setChartDimensions({ width: newWidth, height: newHeight });
       const legend = window.innerWidth < 600 ? false : true;
@@ -27,8 +27,9 @@ function DonutChartComponent({data}: DonutProps):JSX.Element {
   }, []);
   return (
 
-    <div className={styles.donutChartContainer}>
+    <div className={styles.donutchart}>
       <DonutChart
+        className={styles.DDDDD}
         height={chartDimensions.height}
         width={chartDimensions.width}
         data={data}

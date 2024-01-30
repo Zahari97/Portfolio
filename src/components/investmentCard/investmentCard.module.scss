@@ -27,6 +27,10 @@
       padding-right: 3px;
     }
   }
+  p:last-child {
+    border-right: 0;
+  
+  }
 }
 
 .investmentContent {
